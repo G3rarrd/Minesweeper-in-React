@@ -10,8 +10,7 @@ interface BlockProps {
     onBlockClick: () => void;
     id: string;
     value: Blocks;
-    addFlagClick: () => void;
-
+    addFlagClick: (e : React.MouseEvent) => void;
 }
 
 const Block: React.FC<BlockProps> = ({value, onBlockClick, addFlagClick, id}) => {

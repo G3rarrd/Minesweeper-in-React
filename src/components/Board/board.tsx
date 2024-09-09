@@ -211,8 +211,8 @@ export default function Board() {
                 <Header />
                 <div className="board">
                     {board.map((row, rowIndex) => (
-                        row.map((block, blocckIndex) => {
-                            const blockId: number = rowIndex * board[0].length + blocckIndex;
+                        row.map((block, blockIndex) => {
+                            const blockId: number = rowIndex * board[0].length + blockIndex;
                             
                             return (
                                 <Block
