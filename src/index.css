@@ -1,0 +1,49 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Colors */
+  --primaryColor : hsl(215, 75%, 60%);
+  --primaryTransitionColor : hsl(120, 75%, 60%);
+  --primaryMineBackgroundColor: hsl(0, 100%, 60%);
+
+  --secondaryColor : hsl(0, 0%, 10%);
+  --secondaryColor2 : hsl(0, 0%, 15%);
+  --secondaryColor3 : hsl(0, 0%, 20%);
+  --secondaryColorOpposite : hsl(0, 0%, 90%);
+
+  --bombColor : hsl(0, 0%, 10%);
+  --textColor : hsla(0, 0%, 100%, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html body{
+  height: 100%;
+  background-color: var(--secondaryColor2);
+  color : var(--textColor);
+}
+
+#root {
+  display: grid;
+  place-items: center;
+}
+
+
+
+/* Remove all initial button styles */
+button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none; 
+  cursor: pointer;
+}

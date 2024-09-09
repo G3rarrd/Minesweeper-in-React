@@ -1,0 +1,65 @@
+
+.difficulty-container{
+    position: relative;
+    background-color: var(--secondaryColor2);
+    display: flex;
+    flex-direction: column;
+    border-radius: .2rem;
+    text-align: center;
+    transition: all 0.15s ease-out;
+    color : var(--textColor);
+}
+
+.option-difficulty {
+    /* Positioning the difficulty options */
+    position : absolute;
+    width: 100%;
+    top: -0.5rem;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: var(--secondaryColor2);
+    z-index: 1;
+
+    /* For the animation */
+    display: grid;
+    grid-template-rows: 0fr ;
+    transition: grid-template-rows 0.2s ease-in;
+}
+
+.option-difficulty > div {
+    /* Div for the animation */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.option-difficulty.show{
+    grid-template-rows: 1fr ;
+}
+
+.option-difficulty button{
+    padding: .25rem .5rem;
+    color : var(--textColor);
+}
+
+.option-difficulty button:hover {
+    background-color: var( --secondaryColorOpposite) ;
+    color: var(--secondaryColor2);
+    transition: all 0.2s ease-in;
+}
+
+.curDifficultyContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    column-gap: 1rem;
+    margin:  .5rem 0 ;
+    cursor: pointer;
+}
+
+.curDiff {
+    color : var(--textColor);
+}
+

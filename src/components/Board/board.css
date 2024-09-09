@@ -1,0 +1,38 @@
+:root {
+    --boardBorderRadius : 0.25rem;
+}
+
+.boardContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--secondaryColorLight);
+    border-radius: 0.5rem;
+    max-width: 45rem;
+    width: 100%;
+}
+
+.board {
+    position : relative;
+    display: grid;
+    grid-template-columns: repeat(var(--col-count), 1fr);
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--boardBorderRadius);
+}
+
+.blockBoard {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    top : 0;
+    left : 0;
+    display: none;
+    z-index: 1;
+}
+
+.blockBoard.on {
+    display: flex;
+}

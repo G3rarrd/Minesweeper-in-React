@@ -1,0 +1,12 @@
+
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color:var(--secondaryColor3);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}

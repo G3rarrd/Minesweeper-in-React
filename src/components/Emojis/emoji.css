@@ -1,0 +1,14 @@
+#lottie{
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emojiContainer {
+    position : relative;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

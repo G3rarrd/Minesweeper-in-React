@@ -1,0 +1,58 @@
+:root {
+    --blockOutline : 0.05rem;
+
+}
+
+.block {
+    position : relative;
+    width : 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryColor3);
+    overflow: hidden;
+    outline: var(--blockOutline) solid var(--secondaryColor);
+}
+
+.block.mine{
+    background-color: var(--primaryMineBackgroundColor);
+}
+
+/*  */
+.block.mine svg{
+    color : var(--bombColor);
+    animation: jitter 0.1s infinite;
+}
+
+.block span {
+    position : absolute;
+    width : 100%;
+    height: 100%;
+}
+
+.blockClosed {
+    scale : 1;
+    background-color: var(--primaryColor);
+    cursor : pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockOpen {
+    scale : 1;
+    background-color: var(--primaryColor);
+    animation: fill 0.5s var(--anim) cubic-bezier(0.11, 0, 0.5, 0) forwards;
+}
+
+/* Stagger Animation when revealing the blocks  */
+
+@keyframes fill {
+    to {
+        scale : 0;
+        background-color: var(--primaryTransitionColor);
+        border-radius: 300%;
+    }
+}
+
